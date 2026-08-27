@@ -1,0 +1,18 @@
+{
+  "environment": {
+    "python": "3.10.11",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.6.1",
+    "scipy": "1.15.3",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 158 Stepping 13, GenuineIntel",
+    "cpu_count": 12,
+    "omp_num_threads": "unset",
+    "git_commit": "07692a417de3d117ffee0dd34abe5dbe7cdc6ee0"
+  },
+  "rows": 30,
+  "partition": "VALIDATION plus row identities of the frozen test partition, already read under ledger entries 1-7. No metric computed on test; no new ledger entry.",
+  "competitor_artefacts": "C:\\Users\\ricca\\AppData\\Local\\Temp\\vk",
+  "finding": "Removing deduplication lifts Port Scan recall from 0.8687 to 0.9854, but 95.2% of test Port Scan rows then appear identically in train. Their published test set is 66.3% duplicate on the same class."
+}

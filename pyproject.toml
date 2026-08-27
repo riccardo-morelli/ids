@@ -1,0 +1,17 @@
+[project]
+name = "nids-multistage"
+version = "0.1.0"
+description = "Parallel multi-stage NIDS - major revision experimental harness"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "scikit-learn>=1.6",
+    "scipy>=1.15",
+    "optuna>=3.6",
+    "joblib>=1.4",
+    "pyarrow>=15.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["nids*"]

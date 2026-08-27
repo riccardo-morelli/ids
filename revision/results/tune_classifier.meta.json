@@ -1,0 +1,69 @@
+{
+  "environment": {
+    "python": "3.10.11",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.6.1",
+    "scipy": "1.15.3",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 158 Stepping 13, GenuineIntel",
+    "cpu_count": 12,
+    "omp_num_threads": "unset",
+    "git_commit": "979cf52d68307cde195b7e0ff44dce02b5a2b40a"
+  },
+  "rows": 35,
+  "reviewer_comment": "R2.5/R2.6",
+  "partition": "validation",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "dataset": "cic-ids2017",
+  "architecture_frozen": {
+    "architecture": "parallel",
+    "detector": {
+      "kind": "ocsvm",
+      "use_pca": false,
+      "n_components": 56,
+      "n_train": 10000,
+      "gamma": 0.000293,
+      "nu": 1.3e-06,
+      "hidden": 29,
+      "max_iter": 200,
+      "n_estimators": 200,
+      "max_samples": 256,
+      "contamination": 0.01,
+      "n_neighbors": 20,
+      "bandwidth": 1.0,
+      "extremeness_agg": "mean",
+      "orientation": null,
+      "major_var": 0.5,
+      "minor_eigen": 0.2,
+      "two_sided": false,
+      "seed": 0,
+      "params": {}
+    },
+    "tau_b_beta": "F9",
+    "tau_u_quantile": "0.95",
+    "tau_m_objective": "f1"
+  },
+  "arms_completed": [
+    "cycle9-downsample",
+    "cycle9-none",
+    "downsample-base",
+    "none-base",
+    "smote-k5-base",
+    "weighted-base",
+    "weighted-subsample"
+  ],
+  "reference_point": {
+    "arm": "ours-submitted",
+    "balanced_accuracy": "0.9001 +- 0.0235",
+    "source": "baselines_cic-ids2017.csv"
+  },
+  "note": "08_ablations.py's 'weighted' arm did not set class_weight and was therefore identical to 'none': make_split treats 'weighted' and 'none' identically and the cost-sensitive part lives in ClassifierConfig. The genuine cost-sensitive arms are weighted-base and weighted-subsample here. tau_M is re-selected for every resampled classifier.",
+  "scope_note": "SMOTE arms cost ~135-260 s per seed and the 16 GB machine kills the process when several are run in one interpreter, so arms were chunked one process per (arm, seed). Within the compute budget seven arms completed all five seeds. The SMOTE x RF-hyperparameter arms (deep/capped/log2/subsample/cycle9) and the BorderlineSMOTE and SMOTETomek arms are defined in the script but NOT run; smote-k5-capped reached one seed (0.9374) and was dropped rather than reported below five seeds."
+}

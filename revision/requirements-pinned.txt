@@ -1,0 +1,10 @@
+imbalanced-learn==0.14.2
+joblib==1.5.1
+matplotlib==3.10.1
+numpy==1.26.4
+optuna==4.8.0
+pandas==2.2.3
+pyarrow==18.1.0
+scikit-learn==1.6.1
+scipy==1.15.3
+threadpoolctl==3.6.0

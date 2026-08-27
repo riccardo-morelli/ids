@@ -1,0 +1,24 @@
+{
+  "environment": {
+    "python": "3.10.11",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.6.1",
+    "scipy": "1.15.3",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 158 Stepping 13, GenuineIntel",
+    "cpu_count": 12,
+    "omp_num_threads": "unset",
+    "git_commit": "e163e70c601956b164c1c414173f23c93302f332"
+  },
+  "rows": 2,
+  "alpha": 0.05,
+  "n_bootstrap": 1000,
+  "tests": {
+    "mcnemar": "exact binomial on discordant paired predictions, seed 0",
+    "wilcoxon": "signed-rank across seeds on balanced accuracy",
+    "bootstrap": "percentile CI on the balanced-accuracy difference"
+  },
+  "power_caveat": "With 5 seeds the smallest attainable two-sided Wilcoxon p is 0.0625, so Wilcoxon cannot reach alpha=0.05 at this sample size. It is reported for consistency of sign; the bootstrap CI carries the effect size.",
+  "finding_A1": "The reviewer's stated comparison (0.9362 vs 0.9216) uses a baseline figure absent from Verkerken's Table V. We test against our own re-run of their 'balanced' configuration."
+}

@@ -1,0 +1,28 @@
+{
+  "environment": {
+    "python": "3.10.11",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.6.1",
+    "scipy": "1.15.3",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 158 Stepping 13, GenuineIntel",
+    "cpu_count": 12,
+    "omp_num_threads": "unset",
+    "git_commit": "e1cadc9099fe04da1243e5e7d646dfb0ed594470"
+  },
+  "rows": 4,
+  "protocol": {
+    "warmup_discarded": 5,
+    "timed_repetitions": 30,
+    "per_sample_repetitions": 200,
+    "clock": "time.perf_counter (monotonic)",
+    "threads_pinned": 1,
+    "inside_timer": "feature transform, stage-1 model call, stage-2 fusion",
+    "outside_timer": "data loading, model fitting, metric computation",
+    "parallel": "MEASURED via ThreadPoolExecutor(2), not computed as max(detector, classifier); includes contention",
+    "gpu": "not used",
+    "idle_machine": "asserted by the operator; this script must be run serialised, with no other experiment running"
+  },
+  "disclosure_A6": "The submitted 27% figure came from a legacy notebook that summed stage timings sequentially while claiming a parallel architecture, and compared arms that paid different preprocessing (their PCA, our none). Both arms here pay their own transform inside the timer."
+}

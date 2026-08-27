@@ -1,0 +1,22 @@
+data/raw/
+data/interim/
+*.parquet
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+models/
+.optuna/
+*.db
+
+# LaTeX build products (source is tracked, artefacts are not)
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.spl
+paper/doc/
+NIDS___IoT.zip
+
+# Dataset archives: 519 MB, over GitHub limits. Recover with src/fetch_ids2017.py
+Data/cic-ids-2017/*.zip

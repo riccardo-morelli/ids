@@ -1,0 +1,31 @@
+measure,key,before,after,value
+survival,BENIGN,2271320,1896672,0.8350527446594932
+survival,DoS Hulk,230124,172846,0.7510994072760773
+survival,PortScan,158804,1956,0.01231707009898995
+survival,DDoS,128025,128014,0.9999140792813903
+survival,DoS GoldenEye,10293,10286,0.999319926163412
+survival,FTP-Patator,7935,5931,0.7474480151228734
+survival,SSH-Patator,5897,3219,0.545870781753434
+survival,DoS slowloris,5796,5385,0.9290890269151139
+survival,DoS Slowhttptest,5499,5228,0.95071831242044
+survival,Bot,1956,1437,0.7346625766871165
+survival,Web Attack - Brute Force,1507,1470,0.9754479097544791
+survival,Web Attack - XSS,652,652,1.0
+survival,Infiltration,36,36,1.0
+survival,Web Attack - Sql Injection,21,21,1.0
+survival,Heartbleed,11,11,1.0
+train_test_overlap,Benign,56658,5110,0.09019026439337781
+train_test_overlap,Botnet,587,185,0.3151618398637138
+train_test_overlap,Brute Force,587,168,0.28620102214650767
+train_test_overlap,DoS,587,72,0.12265758091993186
+train_test_overlap,Port Scan,587,559,0.9522998296422487
+train_test_overlap,Web Attack,587,11,0.018739352640545145
+train_test_overlap,Zero Day,47,0,0.0
+their_test_internal_dup,(D)DOS,584,0,0.0
+their_test_internal_dup,Benign,56468,2081,0.03685273075015938
+their_test_internal_dup,Botnet,584,107,0.1832191780821918
+their_test_internal_dup,Brute Force,584,0,0.0
+their_test_internal_dup,Heartbleed,11,0,0.0
+their_test_internal_dup,Infiltration,36,0,0.0
+their_test_internal_dup,Port Scan,584,387,0.6626712328767124
+their_test_internal_dup,Web Attack,584,0,0.0

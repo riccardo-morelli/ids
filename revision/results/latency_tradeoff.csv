@@ -1,0 +1,5 @@
+arm,balanced_accuracy,balanced_accuracy_std,parallel_measured_median_s,throughput_flows_per_s
+"ours-submitted (parallel, OCSVM, 64 feat)",0.9001006316264469,0.0235071518780434,0.44398340000770986,218614.02925945996
+"verkerken (sequential, OCSVM+PCA, 64 feat)",0.8000601622706347,0.0255356273085506,0.4833409999846481,200812.67677081577
+"verkerken-faithful (sequential, OCSVM+PCA, 64 feat)",,,12.163481900002807,7979.705219109801
+"candidate (parallel, knn2s, 36 feat)",,,3.3698498000157997,28802.76741104156

@@ -1,0 +1,35 @@
+{
+  "environment": {
+    "python": "3.10.11",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.6.1",
+    "scipy": "1.15.3",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 158 Stepping 13, GenuineIntel",
+    "cpu_count": 12,
+    "omp_num_threads": "unset",
+    "git_commit": "c3832833c6a26a9d370d21d4eb3fc043e9ad9b2e"
+  },
+  "rows": 125,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "trials": 120,
+  "variants": [
+    "DDoS",
+    "DoS Hulk",
+    "DoS slowloris",
+    "FTP-Patator",
+    "Web Attack - XSS"
+  ],
+  "keep_floor": 0.9,
+  "fpr_ceiling": 0.1,
+  "partition": "validation (+ withheld variant rows); frozen test never read",
+  "frozen": "stage 1a OCSVM and stage 1b RF-200 unchanged; only fuse() searched",
+  "protocol": "nested leave-one-variant-out: thresholds tuned on 4 folds under hard constraints, scored on the 5th"
+}

@@ -1,0 +1,24 @@
+{
+  "environment": {
+    "python": "3.10.11",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.6.1",
+    "scipy": "1.15.3",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 158 Stepping 13, GenuineIntel",
+    "cpu_count": 12,
+    "omp_num_threads": "unset",
+    "git_commit": "e163e70c601956b164c1c414173f23c93302f332"
+  },
+  "rows": 3,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "partition": "validation",
+  "published_source": "Verkerken et al., IEEE TNSM 20(3):3915-3929, 2023, Table V. Quoted, not measured by us.",
+  "finding_A1": "The submitted manuscript's Table 5 attributes to this work a configuration at bACC 0.9216 / zero-day 0.8297. No such row exists in their Table V. The revision compares against the 'balanced' configuration, re-run in our harness, and says so.",
+  "known_divergence": "Our reproduction is expected to sit below their published balanced accuracy. Our F1-weighted reproduces closely (see results/cycle5-phaseA). The residual bACC gap is most plausibly the downsampling floor: 1,437/class in our cleaning vs 1,948 in theirs. Reported, not smoothed over."
+}

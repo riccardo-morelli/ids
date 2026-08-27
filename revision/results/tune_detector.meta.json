@@ -1,0 +1,80 @@
+{
+  "environment": {
+    "python": "3.10.11",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.6.1",
+    "scipy": "1.15.3",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 158 Stepping 13, GenuineIntel",
+    "cpu_count": 12,
+    "omp_num_threads": "unset",
+    "git_commit": "979cf52d68307cde195b7e0ff44dce02b5a2b40a"
+  },
+  "rows": 2520,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "dataset": "cic-ids2017",
+  "partition": "validation",
+  "architecture": "parallel (FROZEN)",
+  "reference_point": {
+    "arm": "ours-submitted",
+    "balanced_accuracy": 0.9001,
+    "balanced_accuracy_std": 0.0235,
+    "benign_fpr": 0.059,
+    "source": "revision/results/baselines_cic-ids2017.csv"
+  },
+  "search_space": {
+    "gamma": [
+      2.93e-05,
+      0.0001,
+      0.000293,
+      0.001,
+      0.00293,
+      0.01
+    ],
+    "nu": [
+      1.3e-06,
+      0.0001,
+      0.001,
+      0.01
+    ],
+    "n_train": [
+      5000,
+      10000,
+      20000
+    ],
+    "tau_b_beta": [
+      "F1",
+      "F2",
+      "F3",
+      "F4",
+      "F5",
+      "F6",
+      "F7",
+      "F8",
+      "F9"
+    ],
+    "tau_u_quantile": [
+      "0.95",
+      "0.975",
+      "0.99",
+      "0.995"
+    ],
+    "tau_m_objective": [
+      "f1",
+      "f1_weighted"
+    ],
+    "transform": [
+      "standard",
+      "quantile_uniform"
+    ],
+    "n_detectors": 35,
+    "n_configurations": 2520
+  },
+  "adoption_rule": "reliable_gain requires a positive paired delta at every seed AND mean paired delta > its own std.",
+  "note": "Thresholds selected from validation scores only; split.test is never read. detector_infer_s is transform+score over the 95,551-row benign validation stream, so a costlier detector is always reported with its cost."
+}

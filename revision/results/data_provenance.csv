@@ -1,0 +1,27 @@
+dataset,attack_type,n_after_cleaning,status
+cic-ids2017,Benign,1896672,ok
+cic-ids2017,DoS,321759,ok
+cic-ids2017,Brute Force,9150,ok
+cic-ids2017,Web Attack,2143,ok
+cic-ids2017,Port Scan,1956,ok
+cic-ids2017,Botnet,1437,ok
+cic-ids2017,Infiltration,36,ok
+cic-ids2017,Heartbleed,11,ok
+cic-ids2017,TOTAL,2233164,ok
+cic-ids2017,[partition] train_benign,100000,ok
+cic-ids2017,[partition] train_malicious,3520,ok
+cic-ids2017,[partition] val_benign,95551,ok
+cic-ids2017,[partition] val_malicious,1510,ok
+cic-ids2017,[partition] test,44040,ok
+cse-cic-ids2018,Benign,989182,ok
+cse-cic-ids2018,DoS,500101,ok
+cse-cic-ids2018,Botnet,101695,ok
+cse-cic-ids2018,Brute Force,42312,ok
+cse-cic-ids2018,Infiltration,41234,ok
+cse-cic-ids2018,Web Attack,867,ok
+cse-cic-ids2018,TOTAL,1675391,ok
+cse-cic-ids2018,[partition] train_benign,100000,ok
+cse-cic-ids2018,[partition] train_malicious,1700,ok
+cse-cic-ids2018,[partition] val_benign,95551,ok
+cse-cic-ids2018,[partition] val_malicious,728,ok
+cse-cic-ids2018,[partition] test,835905,ok

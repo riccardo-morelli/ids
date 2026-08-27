@@ -1,0 +1,16 @@
+{
+  "environment": {
+    "python": "3.10.11",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.6.1",
+    "scipy": "1.15.3",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 158 Stepping 13, GenuineIntel",
+    "cpu_count": 12,
+    "omp_num_threads": "unset",
+    "git_commit": "a7da100d3d55b6348b5f77bdb39ba38e8ee2637c"
+  },
+  "rows": 6,
+  "note": "Finding A9: on KNOWN-class discrimination the classifier alone can outperform the assembled system, because the detector adds false positives faster than the rule head recovers them. The architecture's justification therefore rests on zero-day capability, which a closed classifier cannot provide at all - it has no label to emit."
+}

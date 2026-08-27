@@ -1,0 +1,22 @@
+{
+  "environment": {
+    "python": "3.10.11",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.6.1",
+    "scipy": "1.15.3",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 158 Stepping 13, GenuineIntel",
+    "cpu_count": 12,
+    "omp_num_threads": "unset",
+    "git_commit": "2d7f59a20b1164683e31d5e4c34a46d2de552b9b"
+  },
+  "rows": 12,
+  "partition": "VALIDATION",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "note": "Exact-feature row deduplication keeps 1.2% of Port Scan flows against 55-100% for every other class. No test-set access."
+}

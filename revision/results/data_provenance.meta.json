@@ -1,0 +1,46 @@
+{
+  "environment": {
+    "python": "3.10.11",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.6.1",
+    "scipy": "1.15.3",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 158 Stepping 13, GenuineIntel",
+    "cpu_count": 12,
+    "omp_num_threads": "unset",
+    "git_commit": "daef307acaff869397eab0896f77a626334ceac1"
+  },
+  "rows": 26,
+  "split_seed": 20260803,
+  "test_fraction": 0.3,
+  "default_zero_day": [
+    "Infiltration",
+    "Heartbleed"
+  ],
+  "source_urls": {
+    "cic-ids2017": "http://cicresearch.ca/CICDataset/CIC-IDS-2017/",
+    "cse-cic-ids2018": "s3://cse-cic-ids2018/ (AWS Open Data)"
+  },
+  "file_sha256_prefix": {
+    "Data\\raw\\cic-ids2017\\MachineLearningCVE\\Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv": "13a0f8c8a9576562",
+    "Data\\raw\\cic-ids2017\\MachineLearningCVE\\Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv": "edd5642bed774598",
+    "Data\\raw\\cic-ids2017\\MachineLearningCVE\\Friday-WorkingHours-Morning.pcap_ISCX.csv": "53a41c24d570ea83",
+    "Data\\raw\\cic-ids2017\\MachineLearningCVE\\Monday-WorkingHours.pcap_ISCX.csv": "02bd6ccee6f65c42",
+    "Data\\raw\\cic-ids2017\\MachineLearningCVE\\Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv": "2a7b3295c16d0936",
+    "Data\\raw\\cic-ids2017\\MachineLearningCVE\\Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv": "d67066211fb1689c",
+    "Data\\raw\\cic-ids2017\\MachineLearningCVE\\Tuesday-WorkingHours.pcap_ISCX.csv": "d93ef78da1041196",
+    "Data\\raw\\cic-ids2017\\MachineLearningCVE\\Wednesday-workingHours.pcap_ISCX.csv": "0efdabbb2c646513",
+    "Data\\raw\\cse-cic-ids2018\\Friday-02-03-2018_TrafficForML_CICFlowMeter.csv": "63fe65369dc87f41",
+    "Data\\raw\\cse-cic-ids2018\\Friday-16-02-2018_TrafficForML_CICFlowMeter.csv": "754e43f95d801356",
+    "Data\\raw\\cse-cic-ids2018\\Friday-23-02-2018_TrafficForML_CICFlowMeter.csv": "b18a6b8c46f57516",
+    "Data\\raw\\cse-cic-ids2018\\Thuesday-20-02-2018_TrafficForML_CICFlowMeter.csv": "3ec8a9b0035c5806",
+    "Data\\raw\\cse-cic-ids2018\\Thursday-01-03-2018_TrafficForML_CICFlowMeter.csv": "3a14da0db6f4a87d",
+    "Data\\raw\\cse-cic-ids2018\\Thursday-15-02-2018_TrafficForML_CICFlowMeter.csv": "bf9c4569a15e1f57",
+    "Data\\raw\\cse-cic-ids2018\\Thursday-22-02-2018_TrafficForML_CICFlowMeter.csv": "dd71943781155931",
+    "Data\\raw\\cse-cic-ids2018\\Wednesday-14-02-2018_TrafficForML_CICFlowMeter.csv": "7c6c0a893d30392c",
+    "Data\\raw\\cse-cic-ids2018\\Wednesday-21-02-2018_TrafficForML_CICFlowMeter.csv": "e786b4dee0d5f34a",
+    "Data\\raw\\cse-cic-ids2018\\Wednesday-28-02-2018_TrafficForML_CICFlowMeter.csv": "a4a78eb7afaf0511"
+  },
+  "note": "Manuscript section 3.1 states the CIC-IDS2017 files were 'updated 2024-02-01'. The files on disk are dated 2018-06-07. The manuscript statement is incorrect and is corrected in the revision."
+}

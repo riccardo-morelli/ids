@@ -1,0 +1,31 @@
+{
+  "environment": {
+    "python": "3.10.11",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.6.1",
+    "scipy": "1.15.3",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 158 Stepping 13, GenuineIntel",
+    "cpu_count": 12,
+    "omp_num_threads": "unset",
+    "git_commit": "e1cadc9099fe04da1243e5e7d646dfb0ed594470"
+  },
+  "rows": 3,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "partition": "TEST (frozen)",
+  "ledger_spends_after_this_run": 7,
+  "split_seed": 20260803,
+  "zero_day_classes": [
+    "Infiltration",
+    "Heartbleed"
+  ],
+  "configuration": "smote-only",
+  "note": "One spend per configuration. All thresholds were chosen on validation before this script ran."
+}

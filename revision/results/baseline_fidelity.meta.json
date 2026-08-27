@@ -1,0 +1,27 @@
+{
+  "environment": {
+    "python": "3.10.11",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.6.1",
+    "scipy": "1.15.3",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 158 Stepping 13, GenuineIntel",
+    "cpu_count": 12,
+    "omp_num_threads": "unset",
+    "git_commit": "9b5344003d976615f26fa066a0980737ff981e4b"
+  },
+  "rows": 20,
+  "partition": "VALIDATION",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "arm": "balanced",
+  "competitor_repo": "https://gitlab.ilabt.imec.be/mverkerk/multi-stage-hierarchical-ids",
+  "competitor_commit": "43c1f3b",
+  "note": "Their published constants, re-run inside our implementation on our split. None of their fitted models is executed. No test-set access."
+}

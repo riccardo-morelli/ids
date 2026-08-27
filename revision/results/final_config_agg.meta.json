@@ -1,0 +1,70 @@
+{
+  "environment": {
+    "python": "3.10.11",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.6.1",
+    "scipy": "1.15.3",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 158 Stepping 13, GenuineIntel",
+    "cpu_count": 12,
+    "omp_num_threads": "unset",
+    "git_commit": "5ea19501b3fc260f733c2cfb80149bc00eabf400"
+  },
+  "rows": 4,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "partition": "validation",
+  "paired_vs_incumbent": {
+    "B-tau_u": {
+      "mean_delta": 0.0074804729062664995,
+      "wins": 5,
+      "n": 5,
+      "per_seed": [
+        0.0075,
+        0.0075,
+        0.0075,
+        0.0075,
+        0.0075
+      ],
+      "ttest_p": 2.1185128986102977e-11,
+      "wilcoxon_p": 0.0625,
+      "wilcoxon_floor": 0.0625
+    },
+    "C-smote": {
+      "mean_delta": 0.03466906349864769,
+      "wins": 4,
+      "n": 5,
+      "per_seed": [
+        0.0424,
+        0.0515,
+        0.0428,
+        0.0453,
+        -0.0087
+      ],
+      "ttest_p": 0.03400212943986888,
+      "wilcoxon_p": 0.125,
+      "wilcoxon_floor": 0.0625
+    },
+    "D-combined": {
+      "mean_delta": 0.04213418683592311,
+      "wins": 4,
+      "n": 5,
+      "per_seed": [
+        0.0499,
+        0.0589,
+        0.0503,
+        0.0528,
+        -0.0012
+      ],
+      "ttest_p": 0.018358490035413722,
+      "wilcoxon_p": 0.125,
+      "wilcoxon_floor": 0.0625
+    }
+  }
+}

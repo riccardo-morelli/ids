@@ -1,0 +1,23 @@
+{
+  "environment": {
+    "python": "3.10.11",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.6.1",
+    "scipy": "1.15.3",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 158 Stepping 13, GenuineIntel",
+    "cpu_count": 12,
+    "omp_num_threads": "unset",
+    "git_commit": "e4e22baf0ba8eac9b57ba6b20c14c3a2378b7fee"
+  },
+  "rows": 21,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "partition": "validation",
+  "protocol": "leave-one-class-out, identical to 03_zero_day_protocols.py",
+  "note": "A closed classifier has no Zero Day label in its output space, so its zero-day recall is 0.0000 by construction on every fold. The operational quantity is where the novel traffic goes instead, and with what confidence."
+}

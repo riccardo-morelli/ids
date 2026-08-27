@@ -1,0 +1,22 @@
+{
+  "environment": {
+    "python": "3.10.11",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.6.1",
+    "scipy": "1.15.3",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 158 Stepping 13, GenuineIntel",
+    "cpu_count": 12,
+    "omp_num_threads": "unset",
+    "git_commit": "5e9236293fe419ceff2d26bd32d2581383ab6df6"
+  },
+  "rows": 15,
+  "seed": 0,
+  "tolerance": 1e-09,
+  "dataset": "cic-ids2017",
+  "verdict": "PASS",
+  "matched": 15,
+  "checked": 15,
+  "note": "Re-fits the chosen configuration from scratch and compares every metric and every selected threshold against the recorded artifact. A single mismatch is a failure."
+}

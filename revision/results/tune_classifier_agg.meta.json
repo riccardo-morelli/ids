@@ -1,0 +1,18 @@
+{
+  "environment": {
+    "python": "3.10.11",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.6.1",
+    "scipy": "1.15.3",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 158 Stepping 13, GenuineIntel",
+    "cpu_count": 12,
+    "omp_num_threads": "unset",
+    "git_commit": "979cf52d68307cde195b7e0ff44dce02b5a2b40a"
+  },
+  "rows": 7,
+  "reviewer_comment": "R2.5/R2.6",
+  "partition": "validation",
+  "note": "std is ddof=1 over seeds, as TUNING.md requires."
+}

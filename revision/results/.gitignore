@@ -1,0 +1,8 @@
+# Regenerable caches: fold precomputations, per-(arm,seed) shards, paired
+# prediction arrays and run logs. The scripts rebuild them; the CSVs and
+# meta.json files in this directory are the results.
+pv_ms/
+s2_ms/
+shards/
+predictions/
+*.txt

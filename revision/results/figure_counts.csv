@@ -1,0 +1,5 @@
+figure,panel,benign_correct,benign_flagged,malicious_caught,malicious_missed,zero_day_caught,zero_day_total,benign_fp
+2a,stage 1a,29762.0,12076.0,1931.0,271.0,,,
+2c,full model (SMOTE),,,,,28.0,47.0,2485.0
+3,tau_3 at 99th percentile,,,,,22.0,47.0,836.0
+2d,"baseline, published constants",,,,,31.0,47.0,1132.0

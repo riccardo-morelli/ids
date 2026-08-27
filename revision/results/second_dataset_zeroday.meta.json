@@ -1,0 +1,25 @@
+{
+  "environment": {
+    "python": "3.10.11",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.6.1",
+    "scipy": "1.15.3",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 158 Stepping 13, GenuineIntel",
+    "cpu_count": 12,
+    "omp_num_threads": "unset",
+    "git_commit": "f605f2f296e1ecf5c191b4a4e114f7586c99b23e"
+  },
+  "rows": 15,
+  "reviewer_comment": "R2.1",
+  "dataset": "cse-cic-ids2018",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "partition": "validation",
+  "memory_note": "The 2018 frame is stored as float32 and the benign FPR pool is capped at 40,000 flows, both to fit this machine's memory. Neither affects the reported precision.",
+  "data_defect": "7 of 10 daily CSE-CIC-IDS2018 files are truncated by the publisher at 1,048,575 rows (the Excel row limit). Absolute class counts are affected. Disclosed in the manuscript."
+}
